@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lerroan Back end</title>
+
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="shortcut icon" href="/imgs/logo_tab.png">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/3b26885b30.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="background">
+
+    <div class="ring-container background">
+        <span class="ring"></span>
+    </div>
+
+    <!--Home-->
+    <section class="layout-home  layout-home--paginas" id="home">
+        <div class="container">
+            <nav class="home">
+
+                <p>
+                    <a href="index.html" class="botao__home--paginas  card__botao--backend--change">Home</a>
+                </p>
+
+
+            </nav>
+        </div>
+    </section>
+
+    <!--Projetos-->
+
+    <div class="layout-projetos">
+        <div class="container" id="projetos">
+            <h1 class="projetos__titulo  projetos__titulo--paginas">Projetos Back end</h1>
+            <article class="projetos__texto" >Ambiente de desenvolvimento<br>
+                Spring Tool Suite 4 || Postman || Eclipse IDE Java EE || XAMPP || Github</article>
+            <div class="row">
+                <div class="col-md-4   layout-projetos--backend--change">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="imgs/backend (1).png" alt="">
+                        </div>
+                        <div class="contentBx">
+                            <h2 class="card__titulo">Sistema Ordens de Serviço</h2>
+                            <h4 class="card__titulo card__subtitulo  card__subtitulo--backend">Web Service Rest API</h4>
+                            <div class="card__descricao">
+                                <p>Sistema para gerenciamento de Ordens de Serviço, tendo em seu Domain Model entidades como cliente, descrição e ordem. <br>
+                                    Desenvolvido com as tecnologias Java11, Spring MVC & Data, JPA (Hibernate), Maven, MySQL e Flyway</p>
+                            </div>
+
+                            <a class="card__botao  card__botao--backend--change" href="https://github.com/DenysFerreira/osworks-api">Visualizar o
+                                Código</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  layout-projetos--backend--change">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="imgs/backend (1).png" alt="">
+                        </div>
+                        <div class="contentBx">
+                            <h2 class="card__titulo">Sistema de Pedidos</h2>
+                            <h4 class="card__titulo card__subtitulo  card__subtitulo--backend">Web Service Rest API</h4>
+                            <div class="card__descricao">
+                                <p>Sistema para gerenciamento de pedidos, tendo em seu Domain Model entidades como cliente, produto e pedido. <br>
+                                    Desenvolvido com as tecnologias Java11, Spring MVC & Data, JPA (Hibernate), Maven e PostgreSQL </p>
+                            </div>
+
+                            <a class="card__botao  card__botao--backend--change" href="https://github.com/DenysFerreira/springboot-2-web-services-jpa">Visualizar o
+                                Código</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  layout-projetos--backend--change">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="imgs/backend (1).png" alt="">
+                        </div>
+                        <div class="contentBx">
+                            <h2 class="card__titulo">Jogo de Xadrez</h2>
+                            <h4 class="card__titulo card__subtitulo  card__subtitulo--backend">Desenvolvido em curso</h4>
+                            <div class="card__descricao">
+                                <p>Jogo desenvolvido durante meu curso em Java11 <br>O tabuleiro do jogo é executado no terminal Git-bash </p>
+                            </div>
+                            <a class="card__botao  card__botao--backend--change" href="https://github.com/DenysFerreira/chess-system-java">Visualizar o
+                                Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="layout-rodape layout-rodape--backend">
+        <div class="container">
+            <p>&copy; Lerroan. Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="javascripts/app.js"></script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".ring-container").fadeOut(1000);
+        })
+    </script>
+
+</body>
+
+</html>

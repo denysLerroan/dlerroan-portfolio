@@ -1,0 +1,92 @@
+.background {
+    background-image: url(/imgs/backgroundblocks.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 100%;
+}
+
+.layout-cabecalho {
+    line-height: 100px;
+    height: 100px;
+
+    transition: 20s;
+}
+
+.layout-cabecalho--nav {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: 3s;
+}
+
+.layout-home {
+    position: relative;
+    padding: 80px 0;
+    margin: 60px 0px;
+
+    transition: 2s;
+}
+
+.layout-projetos{
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+@media(max-width: 991px) {
+    .layout-projetos .row > div:not(.ultima-coluna) {
+        margin-bottom: 40px;
+    }
+}
+
+.layout-sobremim{
+    position: relative;
+    padding: 20px 0;
+    margin: 20px 0px;
+}
+
+.layout-contato{
+    position: relative;
+    margin: 20px 0px;
+}
+
+.layout-rodape {
+    padding: 20px 0px;
+    border-top: 0.5px solid rgb(255, 0, 127);
+
+    background-color: black;
+
+    color: #fff;
+    text-align: center;
+
+    font-size: 1.6em;
+}
+
+.layout-home--paginas{
+    margin: 0;
+    padding: 40px;
+}
+
+.layout-rodape--backend{
+    border-top: 0.5px solid rgb(0, 127, 255);
+}
+.layout-rodape--fullstack{
+    border-top: 0.5px solid rgb(57, 255, 20);
+}
+.layout-rodape--frontend{
+    border-top: 0.5px solid rgb(125,18,255);
+}
+
+
+
+
+
+
+
+
+
