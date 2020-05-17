@@ -369,11 +369,11 @@
         height: 10em;
         text-align: center;
         transition: 1s;
-        z-index: 10;
+        z-index: 100;
     }
     
     .layout-projetos .card:hover .contentBx{
-        height: 23em;
+        height: 25.5em;
     }
     
     .layout-projetos .card .card__titulo{
@@ -414,6 +414,26 @@
         font-size: 1.4em;
         opacity: 0;
         visibility: hidden;
+    }
+
+    @media(max-width: 991px){
+        .layout-projetos .card .card__descricao {
+            font-size: 1rem;
+        }
+    }
+    @media(max-width: 781px){
+        .layout-projetos .card .card__descricao {
+
+            font-size: 1.4rem;
+        }
+    }
+    @media(max-width: 400px){
+        .layout-projetos .card .card__descricao {
+            padding-left: 10%;
+            padding-right: 10%;
+
+            font-size: 1.2rem;
+        }
     }
     
     .layout-projetos .card:hover .card__subtitulo{
