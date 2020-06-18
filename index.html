@@ -17,9 +17,15 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169929936-1"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="https://kit.fontawesome.com/3b26885b30.js" crossorigin="anonymous"></script>
+
+
+
 </head>
 
 <body class="background">
@@ -62,7 +68,10 @@
         <div class="container">
             <nav class="home">
                 <p class="home__titulo">Denys Lerroan</p>
-                <p class="home__subtitulo">Back-end Developer | Web Developer | Java</p>
+                <div class="banner-area">
+                    <p class="home__subtitulo"><span class="type"></span></p>
+                </div>
+                <!--<p class="home__subtitulo">Back-end Developer | Web Developer | Java</p>-->
 
                 <p>
                     <a href="#contato" class="botao">Contato</a>
@@ -72,8 +81,7 @@
                         class="icones__color icones fab fa-linkedin" aria-hidden="true"></i></a>
                 <a href="https://github.com/DenysFerreira" target="_blank"><i class="icones__color icones fab fa-github"
                         aria-hidden="true"></i></a>
-                <a href="https://wa.me/5511961008937?text=Olá,%20acessei%20o%20seu%20número%20via%20link%20do%20seu%20portfólio."
-                    target="_blank"><i class="icones__color icones fab fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://wa.me/5511961008937?text=Olá,%20acessei%20o%20seu%20número%20via%20link%20do%20seu%20portfólio." target="_blank"><i class="icones__color icones fab fa-whatsapp" aria-hidden="true"></i></a>
                 <a href="mailto:d.lerroan@gmail.com" target="_blank"><i class="icones__color icones fas fa-envelope"
                         aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/hello.devtips" target="_blank"><i
@@ -142,10 +150,7 @@
         <div class="container">
             <div class="sobremim">
                 <p class="sobremim__titulo">Sobre mim</p>
-                <p class="sobremim__texto">Sou estudante EAD no curso Tecnólogo em Análise e desenvolvimento de
-                    sistemas.  <br>
-                    Comunicativo, ágil, proativo e com habilidade para assimilar as necessidades da empresa e, assim,
-                    prover soluções.
+                <p class="sobremim__texto">Sou estudante EAD no curso Tecnólogo em Análise e desenvolvimento de sistemas. <br> Comunicativo, ágil, proativo e com habilidade para assimilar as necessidades da empresa e, assim, prover soluções.
                 </p>
 
                 <p class="sobremim__hardskills">Hard Skills</p>
@@ -170,10 +175,9 @@
             <div class="contato">
                 <p class="contato__titulo">Disponível para oportunidades</p>
                 <p class="contato__texto">Gostaria de entrar em contato comigo?</p>
-                <p class="contato__texto">Basta acessar o link de sua preferência e será redirecionado para iniciar o
-                    contato</p>
-                <a href="https://wa.me/5511961008937?text=Olá,%20acessei%20o%20seu%20número%20via%20link%20do%20seu%20portfólio."
-                    target="_blank"><i class="icones__color--contato icones fab fa-whatsapp"
+                <p class="contato__texto">Basta acessar o link de sua preferência e será redirecionado para iniciar o contato
+                </p>
+                <a href="https://wa.me/5511961008937?text=Olá,%20acessei%20o%20seu%20número%20via%20link%20do%20seu%20portfólio." target="_blank"><i class="icones__color--contato icones fab fa-whatsapp"
                         aria-hidden="true"></i></a><br>
                 <a href="mailto:d.lerroan@gmail.com" target="_blank"><i
                         class="icones__color--contato icones fas fa-envelope" aria-hidden="true"></i></a>
@@ -191,9 +195,34 @@
     <script src="javascripts/app.js"></script>
 
     <script>
-        $(window).on("load",function(){
+        $(window).on("load", function() {
             $(".ring-container").fadeOut(1000);
         })
+    </script>
+
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed(".type", {
+            strings: [
+                "Fullstack Developer",
+                "Web Developer",
+                "Spring and Angular"
+            ],
+            typeSpeed: 50,
+            backSpeed: 10,
+            loop: true
+        });
+    </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169929936-1');
     </script>
 
 </body>
